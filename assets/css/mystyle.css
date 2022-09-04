@@ -67,7 +67,7 @@ a:hover i {
     text-align: center;
     position: fixed;
     overflow-x: hidden;
-    transition: .3s;
+    transition: .2s;
     top: 0px;
     background-color: white;
   }
