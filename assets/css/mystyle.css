@@ -82,6 +82,7 @@ a:hover i {
 
   .nav-item {
     margin: 0.2em;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
