@@ -1,17 +1,32 @@
-let changeToCloseIcon = function(icon) {
+let changeToCloseIcon = function (icon) {
     icon = document.getElementById('ham');
     icon.classList.toggle('fa-times');
 }
 
-let navbarNav = document.getElementById('navbarNav');
-fetch('assets/json/menu_en.json')
-.then(response => response.json())
-.then(data => {
-    for(let i=0; i < data.navitems.length; i++){
-        navbarNav.insertAdjacentHTML('afterend', 
-        '<ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="'+ data.navitems[i].href +'">'+'<span class="link-underline link-underline-black">'+ data.navitems[i].txt +'</span></a></li></ul>')
-    }
-}) 
 
-// const obj = JSON.parse(jsonData);
-// document.getElementById("demo").innerHTML = obj.nav-items[1].href + " " + obj.nav-items[1].txt;
+// let newI = document.createElement('i');
+
+fetch('assets/json/menu_en.json')
+    .then(response => response.json())
+    .then(data => {
+        for (let i = 0; i < data.navitems.length; i++) {
+            let navitems = document.getElementById('navitems');
+            let newLi = document.createElement('li');
+            let newA = document.createElement('a');
+            let newSpan = document.createElement('span');
+            
+            newLi.classList.add('nav-item');
+
+            newA.classList.add('nav-link')
+            newA.setAttribute('href', data.navitems[i].href);
+
+            newSpan.classList.add('link-underline');
+            newSpan.classList.add('link-underline-black');
+            newSpan.innerText = newSpan.textContent = data.navitems[i].txt;
+
+            newLi.appendChild(newA);
+            newA.appendChild(newSpan);
+
+            navitems.appendChild(newLi);
+        }
+    })

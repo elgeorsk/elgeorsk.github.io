@@ -3,27 +3,7 @@
     "navitems": [
         {
             "href": "undercon.html",
-            "txt": "Contact"
-        },
-        {
-            "href": "https://drive.google.com/file/d/1N-EqeiG2gCEko0_Rw1vbqKhcj8PvB2Ss/view?usp=sharing",
-            "txt": "Resume"
-        },
-        {
-            "href": "undercon.html",
-            "txt": "Projects"
-        },
-        {
-            "href": "undercon.html",
-            "txt": "Skills"
-        },
-        {
-            "href": "undercon.html",
-            "txt": "Experience"
-        },
-        {
-            "href": "undercon.html",
-            "txt": "Education"
+            "txt": "Home"
         },
         {
             "href": "undercon.html",
@@ -31,7 +11,27 @@
         },
         {
             "href": "undercon.html",
-            "txt": "Home"
-        } 
+            "txt": "Education"
+        },
+        {
+            "href": "undercon.html",
+            "txt": "Experience"
+        },
+        {
+            "href": "undercon.html",
+            "txt": "Skills"
+        },
+        {
+            "href": "undercon.html",
+            "txt": "Projects"
+        },
+        {
+            "href": "https://drive.google.com/file/d/1N-EqeiG2gCEko0_Rw1vbqKhcj8PvB2Ss/view?usp=sharing",
+            "txt": "Resume"
+        },
+        {
+            "href": "undercon.html",
+            "txt": "Contact"
+        }
     ]
 }
